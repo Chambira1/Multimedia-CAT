@@ -1,0 +1,110 @@
+/* Base Resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* Soft pastel pink background */
+  background-color: #fff0f5;
+  color: #4a3b40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Base Card Container */
+.app-card {
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff; /* Clean white card front */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(221, 160, 221, 0.3);
+}
+
+.brand-header {
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ffe4e1;
+  padding-bottom: 15px;
+}
+
+h1 {
+  color: #d81b60; /* Vibrant Rose Pink */
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Flexible Dashboard Layout */
+.content-layout {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.media-column {
+  flex: 1.2;
+  min-width: 0; /* Prevents flex items from breaking layout bounds */
+}
+
+.info-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Video Frame Configuration */
+.video-wrapper {
+  width: 100%;
+  background: #2c2527;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+video {
+  width: 100%;
+  display: block;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #6c5b61;
+  margin-bottom: 30px;
+}
+
+/* Button UI */
+button {
+  background-color: #e91e63; /* Accent Pink */
+  color: #ffffff;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(233, 30, 99, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #c2185b;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(233, 30, 99, 0.4);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button:focus {
+  outline: 3px solid #ff8da1;
+  outline-offset: 2px;
+}
